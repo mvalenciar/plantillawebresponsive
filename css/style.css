@@ -12,6 +12,11 @@ html {
   font-size: 62.5%;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 /* fuentes */
 
 @font-face {
@@ -40,6 +45,43 @@ html {
   font-style: normal;
 }
 
+/* cabecera */
+
+#header {
+  display: block;
+  width: 100%;
+  background-color: #000000;
+  font-family: BebasNeue;
+}
+
+.wrap {
+  margin: 0px auto;
+  width: 1200px;
+  border: 1px solid red;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  background-color: #37bcf9;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
 .gear {
+  padding: 2px;
   font-family: "websymbolsregular";
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+#header h3 {
+  color: white;
+  font-size: 4rem;
 }
