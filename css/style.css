@@ -1,3 +1,5 @@
+/* estilos generales*/
+
 *,
 *::before,
 *::after {
@@ -8,4 +10,36 @@
 
 html {
   font-size: 62.5%;
+}
+
+/* fuentes */
+
+@font-face {
+  font-family: "TrebuchetMS";
+  src: url(/fonts/TrebuchetMS.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url(/fonts/BebasNeue.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "websymbolsregular";
+  src: url(/fonts/websymbols-regular-webfont.eot);
+  src: url(/fonts/websymbols-regular-webfont.eot?#iefix)
+      format("embedded-opentype"),
+    url(/fonts/websymbols-regular-webfont.woff) format("woff"),
+    url(/fonts/websymbols-regular-webfont.ttf) format("truetype"),
+    url(/fonts/websymbols-regular-webfont.svg#websymbolsregular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gear {
+  font-family: "websymbolsregular";
 }
