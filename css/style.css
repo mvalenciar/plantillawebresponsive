@@ -15,6 +15,12 @@ html {
 a {
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
 }
 
 /* fuentes */
@@ -55,6 +61,8 @@ a {
 }
 
 .wrap {
+  display: flex;
+  justify-content: space-between;
   margin: 0px auto;
   width: 1200px;
   border: 1px solid red;
@@ -84,4 +92,42 @@ a {
 #header h3 {
   color: white;
   font-size: 4rem;
+}
+
+.menu {
+  margin: auto 0px;
+  width: 800px;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.menu ul li {
+  font-size: 2.4rem;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.menu ul li:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.menu ul li a:hover {
+  color: #37bcf9;
+  text-decoration: underline;
 }
