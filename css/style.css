@@ -134,8 +134,8 @@ a {
 
 /* inicio banner */
 
-#banner {
-  width: 100%;
+.banner {
+  width: 1200px;
   height: 120px;
   margin: 20px auto;
   border: 10px solid #ffffff;
@@ -144,7 +144,7 @@ a {
   background-position: -200px -200px;
 }
 
-#banner h1 {
+.banner h1 {
   display: block;
   text-transform: uppercase;
   text-align: center;
@@ -154,4 +154,7 @@ a {
   font-size: 4.5rem;
   letter-spacing: 2px;
   text-shadow: 3px 3px 3px black;
+}
+
+#cards {
 }
