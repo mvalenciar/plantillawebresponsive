@@ -156,6 +156,10 @@ a {
   text-shadow: 3px 3px 3px black;
 }
 
+/* fin banner */
+
+/* inicio card */
+
 .card {
   width: 180px;
   height: 250px;
@@ -190,3 +194,79 @@ a {
   font-size: 1.4rem;
   font-weight: normal;
 }
+/* fin card */
+/* inicio aside */
+#aside {
+  width: 200px;
+  border: 1px solid blue;
+}
+
+.widget {
+  width: 100%;
+}
+
+.widget h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "BebasNeue";
+  letter-spacing: 2px;
+  background-image: url(/img/pxgray.png);
+  padding: 5.5px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.widget div {
+  position: relative;
+  box-shadow: 0px 0px 5px grey inset;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+}
+
+.widget form {
+  padding: 10px;
+}
+
+.widget form input[type="text"],
+input[type="password"] {
+  border: none;
+  width: 158px;
+  padding: 3px;
+  background: none;
+  outline: none;
+}
+
+.widget form > input[type="password"] {
+  margin-top: 10px;
+}
+
+.widget .icon-form {
+  position: absolute;
+  font-family: "websymbolsregular";
+}
+
+.widget:nth-child(1) .icon-form {
+  border-left: 1px solid rgb(208, 208, 208);
+  padding: 4px;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+
+.widget:nth-child(2) .icon-form {
+  left: 6px;
+  top: 4px;
+}
+
+.widget:nth-child(2) .padlock {
+  left: 8px;
+}
+
+.widget:nth-child(2) input[type="text"],
+input[type="password"] {
+  margin-left: 18px;
+}
+/* fin aside */
