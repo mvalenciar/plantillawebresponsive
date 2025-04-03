@@ -314,16 +314,93 @@ input[type="password"] {
   -o-transform: scale(0.95);
 }
 
-.widget:nth-child(3) div {
-}
-
-.widget:nth-child(3) a {
+.widget:nth-child(3) div,
+.widget:nth-child(4) div {
   display: block;
-  color: black;
+  margin: 0px auto;
+  padding-bottom: 10px;
+  width: 150px;
+  text-align: center;
+  border: none;
+  box-shadow: 0px 2px 4px grey;
+  overflow: hidden;
 }
 
-.widget:nth-child(3) .social_icon {
+.widget:nth-child(3) div .twitter,
+.widget:nth-child(3) div .facebook,
+.widget:nth-child(3) div .gmail,
+.widget:nth-child(3) div .youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.widget:nth-child(3) div .twitter .social_icon,
+.facebook .social_icon,
+.gmail .social_icon,
+.youtube .social_icon {
+  margin-right: 5px;
+  margin-bottom: 5px;
   color: black;
   font-family: "websymbolsregular";
+  font-size: 2rem;
+  transition: all 400ms;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -ms-transition: all 400ms;
+  -o-transition: all 400ms;
 }
+
+.widget:nth-child(3) div .twitter p,
+.facebook p,
+.gmail p,
+.youtube p {
+  position: absolute;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  opacity: 0;
+  transform: translateX(100px);
+  -webkit-transform: translateX(100px);
+  -moz-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  -o-transform: translateX(100px);
+  transition: all 400ms;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -ms-transition: all 400ms;
+  -o-transition: all 400ms;
+}
+
+.widget:nth-child(3) div .twitter:hover .social_icon,
+.facebook:hover .social_icon,
+.gmail:hover .social_icon,
+.youtube:hover .social_icon {
+  color: #00538c;
+}
+
+.widget:nth-child(3) div .twitter:hover p,
+.youtube:hover p,
+.facebook:hover p,
+.gmail:hover p {
+  position: relative;
+  opacity: 1;
+  text-decoration: underline;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+}
+
+.widget:nth-child(4) div {
+  width: 175px;
+  height: 140px;
+}
+
 /* fin aside */
