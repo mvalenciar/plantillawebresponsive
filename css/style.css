@@ -477,6 +477,7 @@ input[type="password"] {
   font-size: 4rem;
   text-shadow: 0px 0px 5px rgb(199, 199, 199);
   font-family: "TrebuchetMS";
+  font-weight: bold;
   color: #00538c;
   cursor: pointer;
   transition: all 400ms;
