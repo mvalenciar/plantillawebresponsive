@@ -56,7 +56,8 @@ a {
 
 /* cabecera */
 
-#header {
+#header,
+#footer {
   display: block;
   width: 100%;
   background-color: #000000;
@@ -218,8 +219,8 @@ a {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 2rem;
-  font-weight: lighter;
   font-family: "BebasNeue";
+  font-weight: lighter;
   letter-spacing: 2px;
   background-color: lightgrey;
   background-image: url(../img/pxgray.png);
@@ -501,3 +502,89 @@ input[type="password"] {
 }
 
 /* fin main */
+
+/* inicio footer */
+
+#footer {
+  background-color: black;
+}
+
+#footer h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 5.5px;
+  font-family: "BebasNeue";
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  text-align: center;
+  background-color: lightgrey;
+  background-image: url(../img/pxgray.png);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.wrap .footer_menu h3 {
+  width: 250px;
+}
+
+.footer_menu ul li {
+  padding: 18px;
+  color: white;
+  font-size: 2.5rem;
+  list-style-position: inside;
+  border-bottom: 1px solid white;
+}
+
+.footer_menu a {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #37bcf9;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.footer_menu a:hover {
+  color: white;
+}
+
+.footer_iframe iframe {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.footer_icons .html_icon {
+  display: block;
+  padding-left: 20px;
+  margin: 0px auto;
+  width: 250px;
+}
+
+.footer_icons .list_icons {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.footer_icons .footer_icon {
+  width: 30px;
+}
+
+.footer_icons div p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+}
+
+/* fin footer */
