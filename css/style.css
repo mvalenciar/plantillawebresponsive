@@ -75,6 +75,7 @@ a {
 #logo {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 200px;
   background-color: #37bcf9;
   cursor: pointer;
@@ -87,10 +88,31 @@ a {
 }
 
 .gear {
-  padding: 2px;
+  margin-right: 8px;
   font-family: "websymbolsregular";
   font-size: 3rem;
   color: #ffffff;
+  animation-name: rotate-gear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate-gear {
+  from {
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+  }
 }
 
 #header h3 {
