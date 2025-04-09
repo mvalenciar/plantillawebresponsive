@@ -245,6 +245,10 @@ a {
 
 /* inicio card */
 
+#cards {
+  margin-top: 30px;
+}
+
 .card {
   width: 180px;
   height: 240px;
@@ -368,6 +372,11 @@ a {
 }
 /* fin card */
 /* inicio aside */
+
+#main {
+  margin-top: 90px;
+}
+
 #right {
   width: 200px;
 }
