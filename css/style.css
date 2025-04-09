@@ -168,6 +168,24 @@ a {
   box-shadow: 0px 0px 2px grey;
   background-image: url(../img/bakbaner.png);
   background-position: -200px -200px;
+  overflow: hidden;
+  animation: back-banner 10s linear;
+  -webkit-animation: back-banner 10s linear;
+}
+
+@keyframes back-banner {
+  0% {
+    background-position: 0px 0px;
+  }
+  50% {
+    background-position: -200px -200px;
+  }
+  75% {
+    background-position: -100px -150px;
+  }
+  100% {
+    background-position: -200px -200px;
+  }
 }
 
 .banner h1 {
@@ -180,6 +198,47 @@ a {
   font-size: 4.5rem;
   letter-spacing: 2px;
   text-shadow: 3px 3px 3px black;
+  animation: text-translate 10s linear;
+  -webkit-animation: text-translate 10s linear;
+}
+
+@keyframes text-translate {
+  0% {
+    opacity: 1;
+    transform: translateX(-600%) scale(5, 5);
+    -webkit-transform: translateX(-600%) scale(5, 5);
+    -moz-transform: translateX(-600%) scale(5, 5);
+    -ms-transform: translateX(-600%) scale(5, 5);
+    -o-transform: translateX(-600%) scale(5, 5);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(600%) scale(5, 5);
+    -webkit-transform: translateX(600%) scale(5, 5);
+    -moz-transform: translateX(600%) scale(5, 5);
+    -ms-transform: translateX(600%) scale(5, 5);
+    -o-transform: translateX(600%) scale(5, 5);
+  }
+  75% {
+    opacity: 0;
+    text-shadow: none;
+    color: transparent;
+    transform: translate(-600%) scale(5, 5);
+    -webkit-transform: translate(-600%) scale(5, 5);
+    -moz-transform: translate(-600%) scale(5, 5);
+    -ms-transform: translate(-600%) scale(5, 5);
+    -o-transform: translate(-600%) scale(5, 5);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 3px 3px 3px black;
+    color: #ffffff;
+    transform: translate(0%) scale(1);
+    -webkit-transform: translate(0%) scale(1);
+    -moz-transform: translate(0%) scale(1);
+    -ms-transform: translate(0%) scale(1);
+    -o-transform: translate(0%) scale(1);
+  }
 }
 
 /* fin banner */
@@ -195,6 +254,7 @@ a {
   background-color: white;
   border: 1px solid lightgrey;
   box-shadow: 0.5px 1.5px 3px grey;
+  cursor: pointer;
 }
 
 .card .icon,
