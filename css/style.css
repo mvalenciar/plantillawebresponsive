@@ -865,4 +865,13 @@ input[type="password"] {
     font-size: 3rem;
   }
   /* fin main content */
+
+  /* inicio footer */
+  #footer .wrap {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* fin footer */
 }
