@@ -56,19 +56,20 @@ a {
 
 /* cabecera */
 
+#header {
+}
+
 #header,
 #footer {
   display: block;
   width: 100%;
   background-color: #000000;
   font-family: BebasNeue;
-  overflow: hidden;
 }
 
 #header .wrap,
 #footer .wrap {
   background-color: #000000;
-  overflow: hidden;
 }
 
 .wrap {
@@ -77,7 +78,6 @@ a {
   margin: 0px auto;
   width: 1200px;
   border: 1px solid red;
-  overflow: hidden;
 }
 
 #logo {
@@ -839,7 +839,6 @@ input[type="password"] {
   /* fin banner */
 
   /* inicio cards */
-
   #cards {
     flex-wrap: wrap;
     justify-content: space-around;
@@ -849,6 +848,21 @@ input[type="password"] {
     width: 160px;
     margin-top: 15px;
   }
-
   /* fin cards */
+
+  /*inicio main content */
+  #main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #left {
+    width: 100%;
+  }
+
+  #left .button_blog {
+    width: 100%;
+    font-size: 3rem;
+  }
+  /* fin main content */
 }
