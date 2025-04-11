@@ -77,7 +77,6 @@ a {
   justify-content: space-between;
   margin: 0px auto;
   width: 1200px;
-  border: 1px solid red;
 }
 
 #logo {
@@ -165,6 +164,7 @@ a {
 
 /*icono menu responsive*/
 .menu .icon_responsive_img {
+  display: none;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -800,6 +800,9 @@ input[type="password"] {
     width: 400px;
   }
 
+  .menu .icon_responsive_img {
+    display: block;
+  }
   #header .menu ul {
     display: none;
     flex-direction: column;
